@@ -15,7 +15,7 @@
 <style>
 :root{
   --bg:#f3f1ec; --panel:#ffffff; --panel-2:#f8f7f3; --fg:#1c1f22; --muted:#5f6670; --line:#dcd8cf; --line-2:#ebe8e1;
-  --accent:#c2410c; --accent-fg:#ffffff; --good:#1f7a45; --good-bg:#e6f3ea; --bad:#b42318; --warn:#8a5a00; --warn-bg:#fdf3dc;
+  --accent:#c2410c; --accent-fg:#ffffff; --good:#1f7a45; --good-bg:#e6f3ea; --info:#2563b0; --bad:#b42318; --warn:#8a5a00; --warn-bg:#fdf3dc;
   --flute:rgba(28,31,34,.05);
   --c-fla:#d62f2f; --c-wmd:#2160b8; --c-sax:#e8820c; --c-dn:#7c4dc4; --c-h2p:#0f8a6f; --c-wps:#8f6a12;
   --c-jjb:#c4207f; --c-p24:#0b8597; --c-mx:#3f4bb0; --c-bk:#647a0c; --c-md:#a84a1c;
@@ -26,13 +26,13 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#141619; --panel:#1c1f23; --panel-2:#22262b; --fg:#e8e6e1; --muted:#9aa1a9; --line:#30353b; --line-2:#272b30;
-  --accent:#fb8a4c; --accent-fg:#1c1f22; --good:#5fcf8c; --good-bg:#183223; --bad:#ff8a7a; --warn:#f2c26b; --warn-bg:#33291a;
+  --accent:#fb8a4c; --accent-fg:#1c1f22; --good:#5fcf8c; --good-bg:#183223; --info:#7fb0ff; --bad:#ff8a7a; --warn:#f2c26b; --warn-bg:#33291a;
   --flute:rgba(232,230,225,.035);
   --c-fla:#ff6b6b; --c-wmd:#6ea8ff; --c-sax:#ffaa4d; --c-dn:#b794f6; --c-h2p:#38d0a8; --c-wps:#d8b45a;
   --c-jjb:#f472b6; --c-p24:#3fd0e4; --c-mx:#8f9bff; --c-bk:#b8d24a; --c-md:#f39a6b; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#141619; --panel:#1c1f23; --panel-2:#22262b; --fg:#e8e6e1; --muted:#9aa1a9; --line:#30353b; --line-2:#272b30;
-  --accent:#fb8a4c; --accent-fg:#1c1f22; --good:#5fcf8c; --good-bg:#183223; --bad:#ff8a7a; --warn:#f2c26b; --warn-bg:#33291a;
+  --accent:#fb8a4c; --accent-fg:#1c1f22; --good:#5fcf8c; --good-bg:#183223; --info:#7fb0ff; --bad:#ff8a7a; --warn:#f2c26b; --warn-bg:#33291a;
   --flute:rgba(232,230,225,.035);
   --c-fla:#ff6b6b; --c-wmd:#6ea8ff; --c-sax:#ffaa4d; --c-dn:#b794f6; --c-h2p:#38d0a8; --c-wps:#d8b45a;
   --c-jjb:#f472b6; --c-p24:#3fd0e4; --c-mx:#8f9bff; --c-bk:#b8d24a; --c-md:#f39a6b; color-scheme:dark}
@@ -112,20 +112,84 @@ h2{font:700 24px/1.1 var(--f-display);margin:0}
 .notes li.err::before{background:var(--bad)}
 .notes strong{font-weight:700}
 
+/* Werkzeugleisten über Marktbewegungen und Preisverlauf */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
+.toolbar .seg button{font-size:13px;padding:8px 10px;min-height:34px}
+.check{display:inline-flex;gap:7px;align-items:center;font-size:14px;color:var(--muted);cursor:pointer;min-height:34px}
+.check input{accent-color:var(--accent);width:16px;height:16px;margin:0}
+
+/* Marktbewegungen */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.kpi>span{font:600 11px/1.2 var(--f-body);text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.kpi strong{font:600 22px/1.15 var(--f-mono);font-variant-numeric:tabular-nums}
+.kpi small{font-size:13.5px;color:var(--muted);line-height:1.35}
+.up{color:var(--bad)} .down{color:var(--good)} .flat{color:var(--muted)}
+
+.heat-box{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.heat-box h3,.feed-day h3{margin:0;font:600 12px/1.2 var(--f-body);text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.heat-scroll{overflow-x:auto;padding-bottom:2px}
+.heat{display:grid;gap:3px;padding-right:14px;align-items:center;font-size:13px;min-width:min-content}
+.heat .rl{white-space:nowrap;padding-right:8px;display:flex;align-items:center;gap:6px;position:sticky;left:0;background:var(--panel);z-index:1}
+.heat .rl i{width:8px;height:8px;border-radius:2px;flex:none}
+.c{width:100%;min-width:12px;height:18px;border-radius:3px;background:var(--line-2)}
+.c.same{background:var(--line)}
+.c.none{background:transparent;box-shadow:inset 0 0 0 1px var(--line-2)}
+.c.up{background:var(--bad)} .c.down{background:var(--good)}
+.c.mixed{background:linear-gradient(135deg,var(--bad) 50%,var(--good) 50%)}
+.c.new{background:var(--info)} .c.gone{background:var(--fg)}
+.c.stale{background:repeating-linear-gradient(135deg,var(--warn) 0 3px,transparent 3px 6px)}
+.heat .dl{font:400 10.5px/1 var(--f-mono);color:var(--muted);text-align:center;white-space:nowrap;overflow:visible}
+.heat-legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);margin:0;padding:0;list-style:none}
+.heat-legend li{display:inline-flex;gap:6px;align-items:center}
+.heat-legend .c{display:inline-block;width:14px;height:12px;min-width:0}
+
+.feed{display:flex;flex-direction:column;gap:14px}
+.feed-day{display:flex;flex-direction:column;gap:6px}
+.feed-day ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.ev{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--sc,var(--line));border-radius:6px;padding:10px 12px}
+.ev-top{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:space-between}
+.ev-what{min-width:0;display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline}
+.ev-what strong{font-weight:700}
+.ev-what span{color:var(--muted);font-size:14px}
+.ev-delta{font:600 14px/1.3 var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ev-sub{font-size:13.5px;color:var(--muted);margin-top:2px}
+.ev-sub .num{color:var(--fg)}
+.ev-flag{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:600;padding:3px 7px;border-radius:4px;background:var(--warn-bg);color:var(--warn)}
+.ev details{margin-top:6px;font-size:13.5px}
+.ev summary{cursor:pointer;color:var(--accent);font-weight:600;width:max-content}
+.ev table{min-width:0;width:auto;margin-top:6px;font-size:13px}
+.ev table td,.ev table th{padding:4px 10px 4px 0;border:0;position:static;background:none}
+
 /* Preisverlauf */
 .chart-box{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 8px 6px}
 .chart-box svg{display:block;width:100%;height:auto;touch-action:pan-y}
 .chart-box text{font-family:var(--f-mono);font-size:11px;fill:var(--muted)}
-.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--panel);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.4;
-  box-shadow:0 6px 20px rgba(0,0,0,.18);min-width:180px;max-width:min(320px,80vw);z-index:2}
+.chart-box .zero{stroke:var(--muted);stroke-opacity:.6}
+.chart-box .ser{transition:opacity .15s}
+.chart-box svg.focus .ser:not(.hl){opacity:.12}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--panel);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.45;
+  box-shadow:0 6px 20px rgba(0,0,0,.18);min-width:200px;max-width:min(360px,86vw);z-index:2}
 .tip b{display:block;font-weight:700;margin-bottom:3px}
-.tip div{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.tip div{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center}
 .tip span:first-child{display:inline-flex;gap:6px;align-items:center;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tip i{flex:none;width:9px;height:9px;border-radius:2px}
-.tip .num{white-space:nowrap}
-.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted);margin:0;padding:0;list-style:none}
-.legend li{display:inline-flex;align-items:center;gap:7px}
-.legend svg{flex:none}
+.tip .num{white-space:nowrap;text-align:right}
+.tip .d{font-size:12px;opacity:.85}
+.tip .d.up{color:#ffb4a8} .tip .d.down{color:#9be3b6}
+:root[data-theme="dark"] .tip .d.up{color:var(--bad)}
+.legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2px 10px;margin:0;padding:0;list-style:none}
+.legend button{width:100%;display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:8px;align-items:center;text-align:left;
+  font:500 14px/1.3 var(--f-body);color:var(--fg);background:transparent;border:1px solid transparent;border-radius:5px;padding:6px 8px;cursor:pointer}
+.legend button:hover{background:var(--panel)}
+.legend button[aria-pressed="false"]{color:var(--muted)}
+.legend button[aria-pressed="false"] svg{opacity:.3}
+.legend button[aria-pressed="false"] .lv{text-decoration:line-through}
+.legend .ln{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.legend .ln small{display:block;color:var(--muted);font-size:12.5px;overflow:hidden;text-overflow:ellipsis}
+.legend .lv{font:500 13px/1.2 var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.legend-tools{display:flex;gap:8px;flex-wrap:wrap}
+.link-btn{font:600 13px/1 var(--f-body);color:var(--accent);background:none;border:0;padding:6px 2px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
 .hint{font-size:14px;color:var(--muted);margin:0}
 
 /* Tabelle */
@@ -193,11 +257,44 @@ footer p{margin:0}
     <div class="notes" id="notes" hidden><h3 id="notes-h"></h3><ul id="notes-list"></ul></div>
   </section>
 
+  <section aria-labelledby="h-moves" id="sec-moves" hidden>
+    <div class="sec-head"><h2 id="h-moves">Marktbewegungen</h2><span class="sub" id="moves-sub"></span></div>
+    <div class="toolbar">
+      <div class="ctl"><span id="l-range">Zeitraum</span><div class="seg" role="group" aria-labelledby="l-range" data-range-group></div></div>
+      <div class="ctl"><span id="l-scope">Umfang</span><div class="seg" role="group" aria-labelledby="l-scope" id="scopes">
+        <button type="button" data-scope="qty">gewählte Auflage</button><button type="button" data-scope="fmt">alle Auflagen</button><button type="button" data-scope="all">alle Formate</button></div></div>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div class="heat-box">
+      <h3 id="heat-h">Aktivität je Shop und Tag</h3>
+      <div class="heat-scroll"><div class="heat" id="heat" role="table" aria-labelledby="heat-h"></div></div>
+      <ul class="heat-legend" aria-label="Legende Aktivität">
+        <li><span class="c up"></span>teurer</li>
+        <li><span class="c down"></span>günstiger</li>
+        <li><span class="c mixed"></span>beides</li>
+        <li><span class="c new"></span>neu im Vergleich</li>
+        <li><span class="c gone"></span>weggefallen</li>
+        <li><span class="c same"></span>unverändert</li>
+        <li><span class="c stale"></span>Abruf fehlgeschlagen</li>
+      </ul>
+    </div>
+    <div class="feed" id="feed" aria-live="polite"></div>
+    <button type="button" class="more" id="feed-more" hidden></button>
+  </section>
+
   <section aria-labelledby="h-hist" id="sec-hist" hidden>
     <div class="sec-head"><h2 id="h-hist">Preisverlauf</h2><span class="sub" id="hist-sub"></span></div>
+    <div class="toolbar">
+      <div class="ctl"><span id="l-range2">Zeitraum</span><div class="seg" role="group" aria-labelledby="l-range2" data-range-group></div></div>
+      <div class="ctl"><span id="l-cmode">Darstellung</span><div class="seg" role="group" aria-labelledby="l-cmode" id="cmodes">
+        <button type="button" data-cmode="pct" title="Veränderung je Angebot in Prozent seit Beginn des Zeitraums">Veränderung in %</button><button type="button" data-cmode="abs">Preis in €</button></div></div>
+      <label class="check"><input type="checkbox" id="only-changed"> nur Angebote mit Änderungen</label>
+      <label class="check"><input type="checkbox" id="show-median" checked> Marktmedian</label>
+    </div>
     <div class="chart-box" id="chart-box"><div id="chart"></div><div class="tip" id="tip" hidden></div></div>
-    <ul class="legend" id="legend" aria-label="Legende"></ul>
-    <p class="hint" id="hist-hint" hidden>Der Verlauf füllt sich mit jedem Datenstand. Ab dem zweiten Tag erscheinen hier Linien.</p>
+    <div class="legend-tools"><button type="button" class="link-btn" id="leg-all">alle einblenden</button><button type="button" class="link-btn" id="leg-none">alle ausblenden</button></div>
+    <ul class="legend" id="legend" aria-label="Legende: Angebote ein- und ausblenden"></ul>
+    <p class="hint" id="hist-hint"></p>
   </section>
 
   <section aria-labelledby="h-raw" id="sec-raw" hidden>
@@ -253,7 +350,8 @@ const color=s=>SHOPS[s]?`var(--c-${s})`:"var(--accent)";
 const fmtOf=i=>i.format||"A1";
 const seriesKey=i=>i.shop+"|"+i.material;
 
-const state={snaps:[],status:"loading",fmt:"A1",qty:100,mode:"net",rawFiltered:false,rawLimit:RAW_PAGE};
+const state={snaps:[],status:"loading",fmt:"A1",qty:100,mode:"net",rawFiltered:false,rawLimit:RAW_PAGE,
+  range:"30",scope:"fmt",cmode:"pct",onlyChanged:false,median:true,hidden:new Set(),focus:null,feedLimit:10};
 
 /* ---------- URL-Hash: #A1, #A0, #18/1 ---------- */
 function fmtFromHash(){const h=decodeURIComponent(location.hash.slice(1));return FORMATS[h]?h:null}
@@ -306,7 +404,7 @@ function render(){
   const s=state.snaps,latest=s[s.length-1];
   const modeLabel=state.mode==="net"?"netto":"brutto";
   const sub=`${FORMATS[state.fmt].name} · ${qtyLabel(state.qty)} · ${modeLabel}`;
-  $("rank-sub").textContent=$("hist-sub").textContent=sub;
+  $("rank-sub").textContent=sub;
   $("th-each").textContent=`je Stück (${modeLabel})`;
   if(!latest){
     const e=$("empty");e.hidden=false;
@@ -315,12 +413,13 @@ function render(){
       :state.status==="error"?`<b>Preisdaten nicht erreichbar.</b>Die Datei data/prices.json konnte nicht geladen werden (${esc(state.err)}). Bitte die Seite später neu laden.`
       :"<b>Noch keine Daten.</b>Sobald der erste Lauf der GitHub Action die Shops abgefragt hat, erscheinen hier Ranking, Preisverlauf und alle Datenstände.";
     $("stand").textContent=state.status==="loading"?"Preise werden geladen …":state.status==="error"?"Kein Datenstand verfügbar":"Noch kein Datenstand gespeichert";
-    $("rank").innerHTML="";$("notes").hidden=true;$("sec-hist").hidden=true;$("sec-raw").hidden=true;
+    $("rank").innerHTML="";$("notes").hidden=true;$("sec-hist").hidden=true;$("sec-moves").hidden=true;$("sec-raw").hidden=true;
     return;
   }
-  $("empty").hidden=true;$("sec-hist").hidden=false;$("sec-raw").hidden=false;
+  $("empty").hidden=true;$("sec-hist").hidden=false;$("sec-moves").hidden=false;$("sec-raw").hidden=false;
   $("stand").innerHTML=`Stand: <b>${dLong(latest.date)}${latest.updated?", "+time(latest.updated)+" Uhr":""}</b> · ${nf0.format(s.length)} ${s.length===1?"Datenstand":"Datenstände"} gespeichert`;
   renderRanking(latest,s[s.length-2]);
+  renderMoves();
   renderChart();
   renderRaw();
 }
@@ -363,70 +462,318 @@ function renderRanking(latest,prev){
   if(!offers.length){$("rank").innerHTML=`<li class="empty"><b>Keine Angebote.</b>Für ${esc(FORMATS[state.fmt].name)} in ${esc(qtyLabel(state.qty))} gibt es im neuesten Datenstand keine Preise.</li>`}
 }
 
+/* ---------- Zeitraum, Ereignisse ---------- */
+const RANGES={"7":{label:"7 Tage",days:7},"30":{label:"30 Tage",days:30},"90":{label:"90 Tage",days:90},"all":{label:"gesamt",days:Infinity}};
+const SCOPES={qty:"gewählte Auflage",fmt:"alle Auflagen",all:"alle Formate"};
+const FEED_PAGE=10;
+const isStale=i=>(i?.notes||[]).includes(STALE);
+const itemKey=i=>fmtOf(i)+"|"+i.shop+"|"+i.material+"|"+i.qty;
+const dWeek=d=>new Date(d+"T12:00:00").toLocaleDateString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit",year:"numeric"});
+const signPct=v=>(v>0?"+":v<0?"−":"±")+pct(Math.abs(v));
+const signEur=v=>(v>0?"+":v<0?"−":"±")+eurF.format(Math.abs(v));
+const arrow=v=>v>0.0001?"▲":v<-0.0001?"▼":"■";
+const dirClass=v=>v>0.0001?"up":v<-0.0001?"down":"flat";
+let EVENTS=[]; // je Datenstand k: Ereignisse beim Übergang k-1 → k
+
+$("scopes").addEventListener("click",e=>{const b=e.target.closest("[data-scope]");if(b){state.scope=b.dataset.scope;state.feedLimit=FEED_PAGE;renderMoves()}});
+document.querySelectorAll("[data-range-group]").forEach(g=>{
+  g.innerHTML=Object.entries(RANGES).map(([k,r])=>`<button type="button" data-range="${k}">${r.label}</button>`).join("");
+  g.addEventListener("click",e=>{const b=e.target.closest("[data-range]");if(!b)return;
+    // Position der Leiste halten, auch wenn sich die Länge der Änderungsliste darüber ändert
+    const top=g.getBoundingClientRect().top;
+    state.range=b.dataset.range;state.feedLimit=FEED_PAGE;hideTip();renderMoves();renderChart();
+    window.scrollBy(0,g.getBoundingClientRect().top-top)});
+});
+$("cmodes").addEventListener("click",e=>{const b=e.target.closest("[data-cmode]");if(b){state.cmode=b.dataset.cmode;hideTip();renderChart()}});
+$("only-changed").addEventListener("change",e=>{state.onlyChanged=e.target.checked;hideTip();renderChart()});
+$("show-median").addEventListener("change",e=>{state.median=e.target.checked;hideTip();renderChart()});
+$("feed-more").addEventListener("click",()=>{state.feedLimit+=FEED_PAGE*2;renderMoves()});
+$("leg-all").addEventListener("click",()=>{state.hidden.clear();renderChart()});
+$("leg-none").addEventListener("click",()=>{(chartCtx?.list||[]).forEach(s=>state.hidden.add(s.key));renderChart()});
+
+function syncToolbars(){
+  document.querySelectorAll("[data-range]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.range===state.range)));
+  document.querySelectorAll("[data-scope]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.scope===state.scope)));
+  document.querySelectorAll("[data-cmode]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.cmode===state.cmode)));
+  $("only-changed").checked=state.onlyChanged;$("show-median").checked=state.median;
+}
+
+/** Index des ersten Datenstands im gewählten Zeitraum */
+function windowStart(){
+  const s=state.snaps,days=RANGES[state.range].days;
+  if(!isFinite(days)||!s.length)return 0;
+  const lim=new Date(s[s.length-1].date+"T12:00:00");lim.setDate(lim.getDate()-(days-1));
+  const iso=`${lim.getFullYear()}-${String(lim.getMonth()+1).padStart(2,"0")}-${String(lim.getDate()).padStart(2,"0")}`;
+  const i=s.findIndex(x=>x.date>=iso);return i<0?s.length-1:i;
+}
+
+/** Vergleicht jeden Datenstand mit dem vorherigen: Preisänderungen, neue und weggefallene Angebote */
+function computeEvents(){
+  const s=state.snaps;EVENTS=s.map(()=>[]);
+  for(let k=1;k<s.length;k++){
+    const A=new Map(s[k-1].items.map(i=>[itemKey(i),i])),B=new Map(s[k].items.map(i=>[itemKey(i),i]));
+    const base={k,date:s[k].date,prevDate:s[k-1].date};
+    B.forEach((b,key)=>{const a=A.get(key);
+      if(!a)EVENTS[k].push({...base,type:"new",fmt:fmtOf(b),shop:b.shop,material:b.material,qty:b.qty,b});
+      else if(Math.abs(a.net-b.net)>=0.005)EVENTS[k].push({...base,type:"change",fmt:fmtOf(b),shop:b.shop,material:b.material,qty:b.qty,a,b,afterStale:isStale(a)});
+    });
+    A.forEach((a,key)=>{if(B.has(key))return;
+      const f=fmtOf(a);
+      const u=(s[k].unavailable||[]).find(x=>x.shop===a.shop&&(x.format||"A1")===f&&x.qty===a.qty);
+      const er=(s[k].errors||[]).find(x=>x.shop===a.shop&&(x.format||f)===f);
+      EVENTS[k].push({...base,type:"gone",fmt:f,shop:a.shop,material:a.material,qty:a.qty,a,reason:u?.reason||(er?"Abruf fehlgeschlagen":"kein Preis mehr im Datenstand")});
+    });
+  }
+}
+const inScope=e=>state.scope==="all"||(e.fmt===state.fmt&&(state.scope==="fmt"||e.qty===state.qty));
+const evPct=e=>(e.b[state.mode]/e.a[state.mode]-1)*100;
+
+/** Günstigster Preis je Shop für Format/Auflage in einem Datenstand */
+function shopBest(snap,fmt,qty){
+  const m=new Map();
+  snap.items.forEach(i=>{if(fmtOf(i)!==fmt||i.qty!==qty)return;const v=i[state.mode];if(!m.has(i.shop)||v<m.get(i.shop).v)m.set(i.shop,{v,i})});
+  return m;
+}
+function median(a){if(!a.length)return null;const b=[...a].sort((x,y)=>x-y),h=b.length>>1;return b.length%2?b[h]:(b[h-1]+b[h])/2}
+
+/* ---------- Marktbewegungen ---------- */
+function renderMoves(){
+  syncToolbars();
+  const s=state.snaps,n=s.length;if(!n)return;
+  const w=windowStart(),F=FORMATS[state.fmt];
+  $("moves-sub").textContent=`${dLong(s[w].date)} bis ${dLong(s[n-1].date)} · ${SCOPES[state.scope]}${state.scope==="all"?"":" · "+F.name+(state.scope==="qty"?", "+qtyLabel(state.qty):"")}`;
+  const evs=[];for(let k=w+1;k<n;k++)EVENTS[k].forEach(e=>{if(inScope(e))evs.push(e)});
+  const changes=evs.filter(e=>e.type==="change");
+  const ups=changes.filter(e=>e.b.net>e.a.net).length,downs=changes.length-ups;
+  const shopsMoved=new Set(changes.map(e=>e.shop));
+
+  // Kennzahlen für gewähltes Format und Auflage
+  const b0=shopBest(s[w],state.fmt,state.qty),b1=shopBest(s[n-1],state.fmt,state.qty);
+  const best=m=>[...m.values()].sort((x,y)=>x.v-y.v)[0];
+  const c0=best(b0),c1=best(b1);
+  const m0=median([...b0.values()].map(x=>x.v)),m1=median([...b1.values()].map(x=>x.v));
+  const delta=(a,b)=>a&&b?(b/a-1)*100:null;
+  const dtxt=d=>d===null?"":Math.abs(d)<0.005?` · unverändert ${since}`:` · <span class="${dirClass(d)}">${arrow(d)} ${signPct(d)}</span> ${since}`;
+  const tile=(label,value,sub,cls="")=>`<div class="kpi"><span>${label}</span><strong class="${cls}">${value}</strong><small>${sub}</small></div>`;
+  const since=w===n-1?"nur ein Datenstand im Zeitraum":`seit ${dShort(s[w].date)}`;
+  let html=tile("Preisänderungen",nf0.format(changes.length),
+    changes.length?`<span class="up">▲ ${ups} teurer</span> · <span class="down">▼ ${downs} günstiger</span>`:`keine ${since}`);
+  html+=tile("Shops mit Änderungen",`${shopsMoved.size} / ${state.scope==="all"?HK_SHOPS.length:F.shops.length}`,
+    shopsMoved.size?[...shopsMoved].map(shopName).sort((a,b)=>a.localeCompare(b,"de")).join(", "):"alle Preise stabil");
+  if(c1){const d=delta(c0?.v,c1.v);
+    html+=tile(`Günstigstes Angebot · ${esc(F.label)}, ${esc(qtyLabel(state.qty))}`,eur(c1.v),
+      `${esc(shopName(c1.i.shop))}${dtxt(d)}${c0&&c0.i.shop!==c1.i.shop?` · vorher ${esc(shopName(c0.i.shop))}`:""}`);
+  }
+  if(m1!==null){const d=delta(m0,m1);
+    html+=tile(`Marktmedian · ${esc(F.label)}, ${esc(qtyLabel(state.qty))}`,eur(m1),
+      `${b1.size} Shops${dtxt(d)}`);
+  }
+  $("kpis").innerHTML=html;
+
+  renderHeat(w,n);
+
+  // Änderungsliste: gleiche Änderung eines Shops über mehrere Auflagen zusammenfassen
+  const groups=new Map();
+  evs.forEach(e=>{
+    const dir=e.type==="change"?(e.b.net>e.a.net?"up":"down"):e.type;
+    const key=[e.k,e.shop,e.fmt,e.type==="change"?e.material:"*",e.type,dir].join("|");
+    if(!groups.has(key))groups.set(key,{k:e.k,date:e.date,prevDate:e.prevDate,shop:e.shop,fmt:e.fmt,material:e.material,type:e.type,dir,list:[]});
+    groups.get(key).list.push(e);
+  });
+  const typeOrder={change:0,new:1,gone:2};
+  const all=[...groups.values()].sort((a,b)=>b.k-a.k||typeOrder[a.type]-typeOrder[b.type]||
+    Math.abs(median(b.list.map(e=>e.type==="change"?evPct(e):0)))-Math.abs(median(a.list.map(e=>e.type==="change"?evPct(e):0)))||shopName(a.shop).localeCompare(shopName(b.shop),"de"));
+  const shown=all.slice(0,state.feedLimit);
+  const byDay=new Map();shown.forEach(g=>{if(!byDay.has(g.date))byDay.set(g.date,[]);byDay.get(g.date).push(g)});
+  $("feed").innerHTML=shown.length?[...byDay].map(([d,gs])=>`<div class="feed-day"><h3>${esc(dWeek(d))} · ${gs.length} ${gs.length===1?"Meldung":"Meldungen"}</h3><ul>${gs.map(eventHtml).join("")}</ul></div>`).join("")
+    :`<div class="empty"><b>Keine Marktbewegungen.</b>Im gewählten Zeitraum hat sich ${state.scope==="all"?"kein Preis":"für diese Auswahl kein Preis"} geändert.</div>`;
+  const more=$("feed-more");more.hidden=all.length<=shown.length;
+  more.textContent=`Ältere Meldungen anzeigen (${nf0.format(all.length-shown.length)} weitere)`;
+}
+
+function eventHtml(g){
+  const fmtL=FORMATS[g.fmt]?.label||g.fmt,m=state.mode;
+  const qtys=[...new Set(g.list.map(e=>e.qty))].sort((a,b)=>a-b);
+  const mats=[...new Set(g.list.map(e=>e.material))];
+  const matText=mats.length===1?mats[0]:`${mats.length} Materialien`;
+  const qtyText=qtys.length===1?qtyLabel(qtys[0]):`${qtys.length} Auflagen (${qtys.map(q=>nf0.format(q)).join(", ")})`;
+  let delta="",sub="",flag="",details="";
+  if(g.type==="change"){
+    const ps=g.list.map(evPct),lo=Math.min(...ps),hi=Math.max(...ps);
+    delta=`<span class="ev-delta ${g.dir}">${arrow(hi)} ${Math.abs(hi-lo)<0.05?signPct(hi):(g.dir==="down"?signPct(hi)+" bis "+signPct(lo):signPct(lo)+" bis "+signPct(hi))}</span>`;
+    if(g.list.length===1){const e=g.list[0];sub=`<span class="num">${eur(e.a[m])}</span> → <span class="num">${eur(e.b[m])}</span> (${signEur(e.b[m]-e.a[m])})`}
+    else{
+      sub=`Vergleich mit ${dShort(g.prevDate)}`;
+      details=`<details><summary>Einzelne Auflagen</summary><table><thead><tr><th>Stück</th><th class="num">vorher</th><th class="num">jetzt</th><th class="num">Δ</th></tr></thead><tbody>${
+        g.list.sort((a,b)=>a.qty-b.qty).map(e=>`<tr><td>${nf0.format(e.qty)}</td><td class="num">${eur(e.a[m])}</td><td class="num">${eur(e.b[m])}</td><td class="num ${dirClass(evPct(e))}">${signPct(evPct(e))}</td></tr>`).join("")}</tbody></table></details>`;
+    }
+    if(g.list.some(e=>e.afterStale))flag=`<span class="ev-flag">nach Abrufausfall neu ermittelt – die Änderung kann schon früher eingetreten sein</span>`;
+  }else if(g.type==="new"){
+    delta=`<span class="ev-delta" style="color:var(--info)">neu im Vergleich</span>`;
+    sub=g.list.length===1?`ab <span class="num">${eur(g.list[0].b[m])}</span>`:`ab <span class="num">${eur(Math.min(...g.list.map(e=>e.b[m])))}</span>`;
+  }else{
+    delta=`<span class="ev-delta">weggefallen</span>`;
+    sub=esc([...new Set(g.list.map(e=>e.reason))].join("; "));
+  }
+  return `<li class="ev" style="--sc:${color(g.shop)}"><div class="ev-top"><div class="ev-what"><strong>${esc(shopName(g.shop))}</strong><span>${esc(fmtL)} · ${esc(matText)} · ${esc(qtyText)}</span></div>${delta}</div>
+    <div class="ev-sub">${sub}</div>${flag}${details}</li>`;
+}
+
+function renderHeat(w,n){
+  const s=state.snaps;
+  const shops=state.scope==="all"?HK_SHOPS:FORMATS[state.fmt].shops;
+  const cols=n-w;
+  const match=i=>state.scope==="all"||(fmtOf(i)===state.fmt&&(state.scope==="fmt"||i.qty===state.qty));
+  const label={up:"teurer",down:"günstiger",mixed:"teurer und günstiger",new:"neu im Vergleich",gone:"weggefallen",same:"unverändert",stale:"Abruf fehlgeschlagen",none:"kein Angebot"};
+  const every=Math.max(1,Math.ceil(cols/10));
+  let h=`<div class="rl" role="columnheader"></div>`+s.slice(w).map((x,j)=>`<div class="dl" role="columnheader">${(cols-1-j)%every===0?dShort(x.date).slice(0,5):""}</div>`).join("");
+  shops.forEach(sh=>{
+    h+=`<div class="rl" role="rowheader"><i style="background:${color(sh)}"></i>${esc(shopName(sh))}</div>`;
+    for(let k=w;k<n;k++){
+      const ev=k>w?EVENTS[k].filter(e=>e.shop===sh&&inScope(e)):[];
+      const its=s[k].items.filter(i=>i.shop===sh&&match(i));
+      const up=ev.some(e=>e.type==="change"&&e.b.net>e.a.net),dn=ev.some(e=>e.type==="change"&&e.b.net<e.a.net);
+      const st=up&&dn?"mixed":up?"up":dn?"down":ev.some(e=>e.type==="gone")?"gone":ev.some(e=>e.type==="new")?"new":
+        its.some(isStale)?"stale":its.length?"same":"none";
+      const n2=ev.filter(e=>e.type==="change").length;
+      h+=`<div class="c ${st}" role="cell" title="${esc(shopName(sh))}, ${dLong(s[k].date)}: ${label[st]}${n2?` (${n2} ${n2===1?"Preis":"Preise"})`:""}"></div>`;
+    }
+  });
+  const el=$("heat");el.style.gridTemplateColumns=`max-content repeat(${cols},minmax(12px,1fr))`;el.innerHTML=h;
+}
+
 /* ---------- Preisverlauf (SVG) ---------- */
 const DASH=["","7 4","2 3"];
 let chartCtx=null;
 function niceStep(raw){if(!(raw>0))return 1;const m=10**Math.floor(Math.log10(raw)),r=raw/m;return (r<=1?1:r<=2?2:r<=2.5?2.5:r<=5?5:10)*m}
+const fmtVal=(v,c)=>c==="pct"?signPct(v):eur(v);
 function renderChart(){
-  const snaps=state.snaps,n=snaps.length,p=i=>i[state.mode];
+  syncToolbars();
+  const snaps=state.snaps,n=snaps.length;if(!n)return;
+  const w=windowStart(),m=n-w,pct0=state.cmode==="pct",mode=state.mode;
+  $("hist-sub").textContent=`${FORMATS[state.fmt].name} · ${qtyLabel(state.qty)} · ${mode==="net"?"netto":"brutto"} · ${dShort(snaps[w].date)}–${dShort(snaps[n-1].date)}`;
+  // Reihen je Shop und Material
   const map=new Map();
-  snaps.forEach((s,si)=>s.items.forEach(i=>{
+  for(let si=w;si<n;si++)snaps[si].items.forEach(i=>{
     if(fmtOf(i)!==state.fmt||i.qty!==state.qty)return;
-    const k=seriesKey(i);if(!map.has(k))map.set(k,{shop:i.shop,material:i.material,pts:new Map()});
-    map.get(k).pts.set(si,p(i));
-  }));
-  const order=Object.keys(SHOPS);
-  const list=[...map.values()].sort((a,b)=>order.indexOf(a.shop)-order.indexOf(b.shop)||a.material.localeCompare(b.material,"de"));
-  const used={};list.forEach(s=>{s.dash=DASH[(used[s.shop]=(used[s.shop]??-1)+1)%DASH.length]});
-  $("hist-hint").hidden=n>1;
-  const vals=list.flatMap(s=>[...s.pts.values()]);
-  if(!vals.length){$("chart").innerHTML=`<p class="hint" style="padding:16px">Keine Preise für diese Auswahl.</p>`;$("legend").innerHTML="";chartCtx=null;return}
-
-  // Zeichenfläche an die tatsächliche Breite anpassen, damit die Schrift auch am Smartphone lesbar bleibt
-  const W=Math.max(300,Math.round($("chart-box").clientWidth-16)||820),H=W<560?240:320,L=W<560?58:78,R=12,T=14,B=30;
-  let lo=Math.min(...vals),hi=Math.max(...vals);const pad=(hi-lo)*0.08||hi*0.05||1;lo=Math.max(0,lo-pad);hi+=pad;
-  const step=niceStep((hi-lo)/5);lo=Math.floor(lo/step)*step;hi=Math.ceil(hi/step)*step;
-  const x=i=>n===1?(L+W-R)/2:L+i*(W-L-R)/(n-1);
-  const y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
-  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="chart-t"><title id="chart-t">Preisverlauf ${esc(FORMATS[state.fmt].name)}, ${esc(qtyLabel(state.qty))}: ${list.length} Angebote über ${n} Datenstände</title>`;
-  for(let t=lo;t<=hi+step/1e6;t+=step)svg+=`<line x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line-2)"/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${esc(eurShort(t))}</text>`;
-  const every=Math.max(1,Math.ceil(n/Math.max(3,Math.floor((W-L)/70))));
-  snaps.forEach((s,i)=>{if((n-1-i)%every===0)svg+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle">${dShort(s.date)}</text>`});
-  svg+=`<line id="cursor" x1="0" x2="0" y1="${T}" y2="${H-B}" stroke="var(--muted)" stroke-dasharray="3 3" visibility="hidden"/>`;
-  list.forEach(s=>{
-    const c=color(s.shop),idx=[...s.pts.keys()].sort((a,b)=>a-b);
-    // Linie in zusammenhängenden Abschnitten (Lücken bleiben offen)
-    let seg=[],segs=[];idx.forEach((i,k)=>{if(k&&i!==idx[k-1]+1){segs.push(seg);seg=[]}seg.push(i)});segs.push(seg);
-    segs.forEach(g=>{if(g.length>1)svg+=`<polyline fill="none" stroke="${c}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"${s.dash?` stroke-dasharray="${s.dash}"`:""} points="${g.map(i=>x(i).toFixed(1)+","+y(s.pts.get(i)).toFixed(1)).join(" ")}"/>`});
-    const li=idx[idx.length-1];
-    svg+=`<circle cx="${x(li)}" cy="${y(s.pts.get(li))}" r="4" fill="${c}" stroke="var(--panel)" stroke-width="2"/>`;
+    const k=seriesKey(i);if(!map.has(k))map.set(k,{key:k,shop:i.shop,material:i.material,pts:new Map()});
+    map.get(k).pts.set(si,{v:i[mode],stale:isStale(i)});
   });
+  const order=Object.keys(SHOPS);
+  let all=[...map.values()].sort((a,b)=>order.indexOf(a.shop)-order.indexOf(b.shop)||a.material.localeCompare(b.material,"de"));
+  const used={};all.forEach(s=>{s.dash=DASH[(used[s.shop]=(used[s.shop]??-1)+1)%DASH.length]});
+  all.forEach(s=>{
+    const idx=[...s.pts.keys()].sort((a,b)=>a-b);s.idx=idx;
+    const base=s.pts.get(idx[0]).v;
+    idx.forEach((i,j)=>{const p=s.pts.get(i);p.y=pct0?(p.v/base-1)*100:p.v;p.changed=j>0&&Math.abs(p.v-s.pts.get(idx[j-1]).v)>=0.005;p.prev=j>0?s.pts.get(idx[j-1]):null});
+    const first=s.pts.get(idx[0]).v,last=s.pts.get(idx[idx.length-1]).v;
+    s.total=(last/first-1)*100;s.last=last;s.lastY=s.pts.get(idx[idx.length-1]).y;s.changes=idx.filter(i=>s.pts.get(i).changed).length;
+  });
+  const list=state.onlyChanged?all.filter(s=>s.changes):all;
+  const vis=list.filter(s=>!state.hidden.has(s.key));
+  // Marktmedian: günstigstes Angebot je Shop, Median über alle Shops
+  let med=null;
+  if(state.median&&all.length){
+    const pts=new Map();
+    for(let si=w;si<n;si++){const v=median([...shopBest(snaps[si],state.fmt,state.qty).values()].map(x=>x.v));if(v!==null)pts.set(si,{v})}
+    const idx=[...pts.keys()];
+    if(idx.length){const base=pts.get(idx[0]).v;idx.forEach((i,j)=>{const p=pts.get(i);p.y=pct0?(p.v/base-1)*100:p.v;p.prev=j?pts.get(idx[j-1]):null;p.changed=j>0&&Math.abs(p.v-p.prev.v)>=0.005});
+      med={key:"__median",median:true,pts,idx,last:pts.get(idx[idx.length-1]).v,total:(pts.get(idx[idx.length-1]).v/base-1)*100}}
+  }
+  const changedAny=all.some(s=>s.changes);
+  $("hist-hint").textContent=n<2?"Der Verlauf füllt sich mit jedem Datenstand. Ab dem zweiten Tag erscheinen hier Linien."
+    :m<2?"Im gewählten Zeitraum liegt nur ein Datenstand. Wähle einen längeren Zeitraum."
+    :!changedAny?`Kein Angebot hat seinen Preis seit ${dShort(snaps[w].date)} geändert – alle Linien verlaufen waagerecht.`
+    :"Punkte markieren Preisänderungen, blasse Abschnitte übernommene Preise nach einem fehlgeschlagenen Abruf. Klick auf die Legende blendet Angebote ein oder aus.";
+
+  const drawn=[...vis,...(med?[med]:[])];
+  const vals=drawn.flatMap(s=>s.idx.map(i=>s.pts.get(i).y));
+  if(!all.length){$("chart").innerHTML=`<p class="hint" style="padding:16px">Keine Preise für diese Auswahl.</p>`;$("legend").innerHTML="";chartCtx=null;return}
+
+  const W=Math.max(300,Math.round($("chart-box").clientWidth-16)||820),H=W<560?260:340,L=W<560?62:82,R=14,T=14,B=34;
+  let lo,hi;
+  if(!vals.length){lo=pct0?-1:0;hi=pct0?1:1}
+  else{lo=Math.min(...vals);hi=Math.max(...vals);
+    if(pct0){lo=Math.min(lo,0);hi=Math.max(hi,0);const pad=Math.max((hi-lo)*0.1,0.5);lo-=pad;hi+=pad}
+    else{const pad=(hi-lo)*0.08||hi*0.05||1;lo=Math.max(0,lo-pad);hi+=pad}}
+  const step=niceStep((hi-lo)/(H<300?4:5));lo=Math.floor(lo/step)*step;hi=Math.ceil(hi/step)*step;
+  const x=i=>m===1?(L+W-R)/2:L+(i-w)*(W-L-R)/(m-1);
+  const y=v=>T+(hi-v)/(hi-lo)*(H-T-B);
+  const tick=v=>pct0?(v>0?"+":v<0?"−":"")+new Intl.NumberFormat("de-DE",{maximumFractionDigits:step<1?1:0}).format(Math.abs(v))+" %":eurShort(v);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="chart-t"${state.focus?' class="focus"':""}><title id="chart-t">Preisverlauf ${esc(FORMATS[state.fmt].name)}, ${esc(qtyLabel(state.qty))}, ${pct0?"Veränderung in Prozent":"Preis in Euro"}: ${vis.length} Angebote, ${m} Datenstände</title>`;
+  for(let t=lo;t<=hi+step/1e6;t+=step){const zero=pct0&&Math.abs(t)<step/1e6;
+    svg+=`<line x1="${L}" x2="${W-R}" y1="${y(t)}" y2="${y(t)}" ${zero?'class="zero"':'stroke="var(--line-2)"'}/><text x="${L-8}" y="${y(t)+4}" text-anchor="end">${esc(tick(t))}</text>`}
+  const every=Math.max(1,Math.ceil(m/Math.max(3,Math.floor((W-L)/70))));
+  for(let i=w;i<n;i++)if((n-1-i)%every===0)svg+=`<text x="${x(i)}" y="${H-10}" text-anchor="middle">${dShort(snaps[i].date)}</text>`;
+  // Markierungen der Tage mit Änderungen unter der Achse
+  const changeDays=new Set(vis.flatMap(s=>s.idx.filter(i=>s.pts.get(i).changed)));
+  changeDays.forEach(i=>{svg+=`<path d="M${x(i)-4} ${H-B+9} L${x(i)+4} ${H-B+9} L${x(i)} ${H-B+3} Z" fill="var(--accent)"><title>Preisänderung am ${dLong(snaps[i].date)}</title></path>`});
+  svg+=`<line id="cursor" x1="0" x2="0" y1="${T}" y2="${H-B}" stroke="var(--muted)" stroke-dasharray="3 3" visibility="hidden"/>`;
+  // Stufenlinien: ein Preis gilt bis zum nächsten Datenstand; Lücken bleiben offen, übernommene Preise blass
+  const drawSeries=(s,c,width,dash,extra="")=>{
+    let out=`<g class="ser${state.focus===s.key?" hl":""}" data-k="${esc(s.key)}">`,d="",curSt=null;
+    const flush=()=>{if(d)out+=`<path d="${d}" fill="none" stroke="${c}" stroke-width="${width}" stroke-linejoin="round"${dash?` stroke-dasharray="${dash}"`:""}${curSt?' opacity=".35"':""}${extra}/>`;d=""};
+    for(let j=1;j<s.idx.length;j++){
+      const i0=s.idx[j-1],i1=s.idx[j];
+      if(i1!==i0+1){flush();continue}
+      const p0=s.pts.get(i0),p1=s.pts.get(i1),st=!!p1.stale;
+      if(st!==curSt){flush();curSt=st}
+      if(!d)d=`M${x(i0).toFixed(1)} ${y(p0.y).toFixed(1)}`;
+      d+=` H${x(i1).toFixed(1)} V${y(p1.y).toFixed(1)}`;
+    }
+    flush();
+    s.idx.forEach(i=>{const p=s.pts.get(i);if(p.changed)out+=`<circle cx="${x(i)}" cy="${y(p.y)}" r="4" fill="${c}" stroke="var(--panel)" stroke-width="1.5"/>`});
+    const li=s.idx[s.idx.length-1];
+    if(!s.median)out+=`<circle cx="${x(li)}" cy="${y(s.pts.get(li).y)}" r="3" fill="var(--panel)" stroke="${c}" stroke-width="2"/>`;
+    return out+"</g>";
+  };
+  if(med)svg+=drawSeries(med,"var(--fg)",2,"1 5",' stroke-linecap="round" stroke-opacity=".75"');
+  vis.forEach(s=>{svg+=drawSeries(s,color(s.shop),2.4,s.dash)});
   svg+=`<g id="dots"></g><rect x="${L}" y="${T}" width="${W-L-R}" height="${H-T-B}" fill="transparent" id="hit" tabindex="0" aria-label="Preisverlauf: mit Pfeiltasten durch die Datenstände blättern"/></svg>`;
   $("chart").innerHTML=svg;
-  $("legend").innerHTML=list.map(s=>`<li><svg width="26" height="10" aria-hidden="true"><line x1="1" x2="25" y1="5" y2="5" stroke="${color(s.shop)}" stroke-width="3" stroke-linecap="round"${s.dash?` stroke-dasharray="${s.dash}"`:""}/></svg>${esc(shopName(s.shop))} · ${esc(s.material)}</li>`).join("");
-  chartCtx={list,x,y,n,W,H,L,R};
+
+  // Legende: Klick blendet ein/aus, Hover hebt hervor
+  const legItem=(s,label,c,dash,pressed)=>`<li><button type="button" data-k="${esc(s.key)}" aria-pressed="${pressed}"${s.median?' disabled style="cursor:default"':""}>
+    <svg width="26" height="10" aria-hidden="true"><line x1="1" x2="25" y1="5" y2="5" stroke="${c}" stroke-width="3" stroke-linecap="round"${dash?` stroke-dasharray="${dash}"`:""}/></svg>
+    <span class="ln">${label}</span><span class="lv">${eur(s.last)} <span class="${dirClass(s.total)}">${Math.abs(s.total)<0.005?"±0 %":signPct(s.total)}</span></span></button></li>`;
+  $("legend").innerHTML=(med?legItem(med,"Marktmedian <small>günstigstes Angebot je Shop</small>","var(--fg)","1 5",true):"")+
+    list.map(s=>legItem(s,`${esc(shopName(s.shop))} <small>${esc(s.material)}${s.changes?` · ${s.changes} ${s.changes===1?"Änderung":"Änderungen"}`:""}</small>`,color(s.shop),s.dash,!state.hidden.has(s.key))).join("");
+  chartCtx={list,vis,med,x,y,w,n,m,W,H,L,R,pct0};
   bindChart();
 }
+$("legend").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b||b.disabled)return;
+  const k=b.dataset.k;state.hidden.has(k)?state.hidden.delete(k):state.hidden.add(k);state.focus=null;hideTip();renderChart();
+  $("legend").querySelector(`button[data-k="${CSS.escape(k)}"]`)?.focus()});
+const setFocus=k=>{const svg=$("chart").querySelector("svg");if(!svg)return;state.focus=k;
+  svg.classList.toggle("focus",!!k);svg.querySelectorAll(".ser").forEach(g=>g.classList.toggle("hl",g.dataset.k===k))};
+$("legend").addEventListener("pointerover",e=>{const b=e.target.closest("button[data-k]");if(b&&b.getAttribute("aria-pressed")==="true")setFocus(b.dataset.k)});
+$("legend").addEventListener("pointerleave",()=>setFocus(null));
+$("legend").addEventListener("focusin",e=>{const b=e.target.closest("button[data-k]");if(b&&b.getAttribute("aria-pressed")==="true")setFocus(b.dataset.k)});
+$("legend").addEventListener("focusout",()=>setFocus(null));
+
 function showTip(i){
   const c=chartCtx;if(!c)return;
-  i=Math.max(0,Math.min(c.n-1,i));c.cur=i;
+  i=Math.max(c.w,Math.min(c.n-1,i));c.cur=i;
   const svg=$("chart").querySelector("svg"),cur=svg.querySelector("#cursor"),dots=svg.querySelector("#dots");
   cur.setAttribute("x1",c.x(i));cur.setAttribute("x2",c.x(i));cur.setAttribute("visibility","visible");
-  const rows=c.list.filter(s=>s.pts.has(i)).map(s=>({s,v:s.pts.get(i)})).sort((a,b)=>a.v-b.v);
-  dots.innerHTML=rows.map(r=>`<circle cx="${c.x(i)}" cy="${c.y(r.v)}" r="4.5" fill="${color(r.s.shop)}" stroke="var(--panel)" stroke-width="2"/>`).join("");
+  const rows=c.vis.filter(s=>s.pts.has(i)).map(s=>({s,p:s.pts.get(i)})).sort((a,b)=>a.p.v-b.p.v);
+  dots.innerHTML=rows.map(r=>`<circle cx="${c.x(i)}" cy="${c.y(r.p.y)}" r="4.5" fill="${color(r.s.shop)}" stroke="var(--panel)" stroke-width="2"/>`).join("");
+  const dd=p=>{if(!p.prev)return "";const d=(p.v/p.prev.v-1)*100;return Math.abs(p.v-p.prev.v)<0.005?"":`<span class="d ${dirClass(d)}">${arrow(d)} ${signPct(d)}</span>`};
+  const medP=c.med?.pts.get(i);
   const tip=$("tip");
-  tip.innerHTML=`<b>${dLong(state.snaps[i].date)}</b>`+(rows.length?rows.map(r=>`<div><span><i style="background:${color(r.s.shop)}"></i>${esc(shopName(r.s.shop))} · ${esc(r.s.material)}</span><span class="num">${eur(r.v)}</span></div>`).join(""):"<div>keine Preise</div>");
+  tip.innerHTML=`<b>${dWeek(state.snaps[i].date)}</b>`+
+    (rows.length?rows.map(r=>`<div><span><i style="background:${color(r.s.shop)}"></i>${esc(shopName(r.s.shop))} · ${esc(r.s.material)}${r.p.stale?" (übernommen)":""}</span><span class="num">${eur(r.p.v)}${c.pct0?` <span class="d">${signPct(r.p.y)}</span>`:""}</span><span class="num">${dd(r.p)}</span></div>`).join(""):"<div>keine Preise</div>")+
+    (medP?`<div style="border-top:1px solid rgba(127,127,127,.4);margin-top:4px;padding-top:4px"><span>Marktmedian</span><span class="num">${eur(medP.v)}</span><span class="num">${dd(medP)}</span></div>`:"");
   tip.hidden=false;
   const box=$("chart-box").getBoundingClientRect(),sr=svg.getBoundingClientRect();
-  const px=sr.left-box.left+c.x(i)/c.W*sr.width;
-  const tw=tip.offsetWidth;
+  const px=sr.left-box.left+c.x(i)/c.W*sr.width,tw=tip.offsetWidth;
   let left=px+14;if(left+tw>box.width-6)left=px-14-tw;if(left<6)left=6;
   tip.style.left=left+"px";tip.style.top="14px";
 }
 function hideTip(){const svg=$("chart").querySelector("svg");$("tip").hidden=true;if(svg){svg.querySelector("#cursor")?.setAttribute("visibility","hidden");const d=svg.querySelector("#dots");if(d)d.innerHTML=""}}
 function bindChart(){
   const svg=$("chart").querySelector("svg"),hit=svg.querySelector("#hit"),c=chartCtx;
-  const idxAt=ev=>{const r=svg.getBoundingClientRect(),vx=(ev.clientX-r.left)/r.width*c.W;return c.n===1?0:Math.round((vx-c.L)/((c.W-c.L-c.R)/(c.n-1)))};
+  const idxAt=ev=>{const r=svg.getBoundingClientRect(),vx=(ev.clientX-r.left)/r.width*c.W;return c.m===1?c.w:c.w+Math.round((vx-c.L)/((c.W-c.L-c.R)/(c.m-1)))};
   hit.addEventListener("pointermove",ev=>showTip(idxAt(ev)));
   hit.addEventListener("pointerdown",ev=>showTip(idxAt(ev)));
   hit.addEventListener("pointerleave",ev=>{if(ev.pointerType==="mouse")hideTip()});
@@ -435,7 +782,7 @@ function bindChart(){
   hit.addEventListener("keydown",ev=>{
     const k={ArrowLeft:-1,ArrowRight:1}[ev.key];
     if(k){ev.preventDefault();showTip((c.cur??c.n-1)+k)}
-    else if(ev.key==="Home"){ev.preventDefault();showTip(0)}else if(ev.key==="End"){ev.preventDefault();showTip(c.n-1)}
+    else if(ev.key==="Home"){ev.preventDefault();showTip(c.w)}else if(ev.key==="End"){ev.preventDefault();showTip(c.n-1)}
     else if(ev.key==="Escape")hideTip();
   });
 }
@@ -465,7 +812,7 @@ fetch("data/prices.json?t="+Date.now(),{cache:"no-store"})
   .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()})
   .then(j=>{
     state.snaps=(j?.snapshots||[]).filter(s=>s&&s.date&&Array.isArray(s.items)).sort((a,b)=>a.date.localeCompare(b.date));
-    state.status=state.snaps.length?"ready":"nodata";render();
+    state.status=state.snaps.length?"ready":"nodata";computeEvents();render();
   })
   .catch(e=>{state.status="error";state.err=e.message||"Netzwerkfehler";render()});
 </script>

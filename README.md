@@ -25,7 +25,7 @@ Direktlinks zu einem Format: `…/#A1`, `…/#A0`, `…/#18/1`.
 
 | Datei | Zweck |
 |---|---|
-| `index.html` | Die Webseite: Ranking, Hinweise, Preisverlauf, alle Datenstände. Lädt `data/prices.json`. |
+| `index.html` | Die Webseite: Ranking, Hinweise, Marktbewegungen (Kennzahlen, Aktivität je Shop und Tag, Änderungsliste), Preisverlauf (Veränderung in % oder Preis in €, Marktmedian), alle Datenstände. Lädt `data/prices.json`. |
 | `data/prices.json` | Alle gespeicherten Preise, ein Datenstand pro Tag (seit 07.10.2026). |
 | `scraper/fetch_prices.py` | Fragt die Shops ab und schreibt den Datenstand des Tages. |
 | `scraper/requirements.txt` | Python-Abhängigkeiten (requests, Playwright). |
