@@ -69621,6 +69621,1882 @@
      "reason": "kein 18/1-Plakat im Sortiment"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "updated": "2026-11-14T04:58:18+00:00",
+   "items": [
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1,
+     "net": 62.25,
+     "gross": 74.08,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 100,
+     "net": 630.9,
+     "gross": 750.77,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 500,
+     "net": 3076.9,
+     "gross": 3661.51,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1000,
+     "net": 5986.9,
+     "gross": 7124.41,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 5000,
+     "net": 29656.9,
+     "gross": 35291.71,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 10000,
+     "net": 59306.9,
+     "gross": 70575.21,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 51.9,
+     "gross": 61.76,
+     "url": "https://drucknische.de/products/hohlkammerplakate-din-a1",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 261.9,
+     "gross": 311.66,
+     "url": "https://drucknische.de/products/hohlkammerplakate-din-a1",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 1047.0,
+     "gross": 1245.93,
+     "url": "https://drucknische.de/products/hohlkammerplakate-din-a1",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 1852.0,
+     "gross": 2203.88,
+     "url": "https://drucknische.de/products/hohlkammerplakate-din-a1",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 1,
+     "net": 12.46,
+     "gross": 14.83,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 100,
+     "net": 349.73,
+     "gross": 416.18,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 500,
+     "net": 1500.6,
+     "gross": 1785.71,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 1000,
+     "net": 3001.19,
+     "gross": 3571.42,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 5000,
+     "net": 13950.45,
+     "gross": 16601.04,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 1,
+     "net": 10.05,
+     "gross": 11.96,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 100,
+     "net": 238.09,
+     "gross": 283.33,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 500,
+     "net": 901.75,
+     "gross": 1073.08,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 1000,
+     "net": 1782.89,
+     "gross": 2121.64,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 5000,
+     "net": 8880.05,
+     "gross": 10567.26,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 1,
+     "net": 13.3,
+     "gross": 15.83,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 100,
+     "net": 372.1,
+     "gross": 442.8,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 500,
+     "net": 1609.79,
+     "gross": 1915.65,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 1000,
+     "net": 3188.88,
+     "gross": 3794.77,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 5000,
+     "net": 14818.75,
+     "gross": 17634.31,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 21.72,
+     "gross": 25.85,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 221.0,
+     "gross": 262.99,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 1011.0,
+     "gross": 1203.09,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 1766.0,
+     "gross": 2101.54,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 5000,
+     "net": 7664.0,
+     "gross": 9120.16,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 10000,
+     "net": 15153.0,
+     "gross": 18032.07,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a1/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 1,
+     "net": 19.5,
+     "gross": 23.21,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 100,
+     "net": 227.5,
+     "gross": 270.73,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 500,
+     "net": 1105.0,
+     "gross": 1314.95,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 1000,
+     "net": 1872.0,
+     "gross": 2227.68,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 5000,
+     "net": 8645.0,
+     "gross": 10287.55,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "jjb",
+     "format": "A1",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 10000,
+     "net": 16900.0,
+     "gross": 20111.0,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8468"
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 19.8,
+     "gross": 23.56,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 366.9,
+     "gross": 436.61,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 1704.6,
+     "gross": 2028.47,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 3409.2,
+     "gross": 4056.95,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 5000,
+     "net": 17026.2,
+     "gross": 20261.18,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A1",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 10000,
+     "net": 34042.5,
+     "gross": 40510.58,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 1,
+     "net": 11.13,
+     "gross": 13.24,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 100,
+     "net": 202.96,
+     "gross": 241.52,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 500,
+     "net": 845.67,
+     "gross": 1006.34,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 1000,
+     "net": 1623.22,
+     "gross": 1931.64,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 5000,
+     "net": 7902.27,
+     "gross": 9403.71,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A1",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 10000,
+     "net": 15804.54,
+     "gross": 18807.4,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 9.71,
+     "gross": 11.55,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 239.41,
+     "gross": 284.9,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 895.54,
+     "gross": 1065.69,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 1558.5,
+     "gross": 1854.62,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1,
+     "net": 9.61,
+     "gross": 11.44,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 100,
+     "net": 237.99,
+     "gross": 283.21,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 500,
+     "net": 895.44,
+     "gross": 1065.57,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1000,
+     "net": 1558.4,
+     "gross": 1854.5,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 5000,
+     "net": 7792.4,
+     "gross": 9272.96,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A1",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 10000,
+     "net": 15584.9,
+     "gross": 18546.03,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a1-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wps",
+     "format": "A1",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 100,
+     "net": 220.0,
+     "gross": 261.8,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a1/"
+    },
+    {
+     "shop": "wps",
+     "format": "A1",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 500,
+     "net": 870.0,
+     "gross": 1035.3,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a1/"
+    },
+    {
+     "shop": "wps",
+     "format": "A1",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 1000,
+     "net": 1510.0,
+     "gross": 1796.9,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a1/"
+    },
+    {
+     "shop": "wps",
+     "format": "A1",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 5000,
+     "net": 7550.0,
+     "gross": 8984.5,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a1/"
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1,
+     "net": 28.22,
+     "gross": 33.58,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 100,
+     "net": 1220.9,
+     "gross": 1452.87,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 500,
+     "net": 5871.9,
+     "gross": 6987.56,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1000,
+     "net": 11636.9,
+     "gross": 13847.91,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 5000,
+     "net": 58156.9,
+     "gross": 69206.71,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 10000,
+     "net": 116306.9,
+     "gross": 138405.21,
+     "url": "https://www.bannerkoenig.de/shop/wahlplakat-hohlkammerplatte/",
+     "notes": [
+      "ohne Lochung (nicht wählbar)",
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 102.0,
+     "gross": 121.38,
+     "url": "https://drucknische.de/products/a0-plakat",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 522.0,
+     "gross": 621.18,
+     "url": "https://drucknische.de/products/a0-plakat",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 2022.0,
+     "gross": 2406.18,
+     "url": "https://drucknische.de/products/a0-plakat",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 3647.0,
+     "gross": 4339.93,
+     "url": "https://drucknische.de/products/a0-plakat",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 1,
+     "net": 23.35,
+     "gross": 27.79,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 100,
+     "net": 574.71,
+     "gross": 683.9,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 500,
+     "net": 2475.03,
+     "gross": 2945.29,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 1000,
+     "net": 4950.06,
+     "gross": 5890.57,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte",
+     "qty": 5000,
+     "net": 24264.31,
+     "gross": 28874.53,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 1,
+     "net": 19.38,
+     "gross": 23.06,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 100,
+     "net": 470.96,
+     "gross": 560.44,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 500,
+     "net": 1711.44,
+     "gross": 2036.61,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 1000,
+     "net": 3160.54,
+     "gross": 3761.04,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Hohlkammerplatte Basic",
+     "qty": 5000,
+     "net": 15565.35,
+     "gross": 18522.77,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 1,
+     "net": 24.85,
+     "gross": 29.57,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 100,
+     "net": 610.92,
+     "gross": 726.99,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 500,
+     "net": 2630.29,
+     "gross": 3130.05,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 1000,
+     "net": 5260.58,
+     "gross": 6260.09,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "material": "450 g Recycling-Hohlkammerplatte",
+     "qty": 5000,
+     "net": 25925.76,
+     "gross": 30851.65,
+     "url": "https://www.flyeralarm.com/de/p/wahlplakate-9456837.html"
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 477.0,
+     "gross": 567.63,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a0/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 2003.0,
+     "gross": 2383.57,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a0/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 3919.0,
+     "gross": 4663.61,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a0/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 5000,
+     "net": 18345.0,
+     "gross": 21830.55,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a0/",
+     "notes": [
+      "Versand per Spedition, nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 10000,
+     "net": 36690.0,
+     "gross": 43661.1,
+     "url": "https://www.highway2print.de/produkt/hohlkammerplakat-din-a0/",
+     "notes": [
+      "Versand geschätzt (2 Speditionssendungen, über Versandtabelle hinaus)"
+     ]
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 1,
+     "net": 22.75,
+     "gross": 27.07,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 100,
+     "net": 533.0,
+     "gross": 634.27,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 500,
+     "net": 1943.5,
+     "gross": 2312.77,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 1000,
+     "net": 3705.0,
+     "gross": 4408.95,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 5000,
+     "net": 17680.0,
+     "gross": 21039.2,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "jjb",
+     "format": "A0",
+     "material": "PP-Wellenstrukturplatte 3 mm",
+     "qty": 10000,
+     "net": 35100.0,
+     "gross": 41769.0,
+     "url": "https://www.jajabo.de/wahlplakate.htm?sorten=8469"
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 19.8,
+     "gross": 23.56,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 727.8,
+     "gross": 866.08,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 3384.2,
+     "gross": 4027.2,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 6758.5,
+     "gross": 8042.62,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 5000,
+     "net": 33792.5,
+     "gross": 40213.08,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "A0",
+     "material": "Hohlkammerplatte 2,5 mm",
+     "qty": 10000,
+     "net": 67585.0,
+     "gross": 80426.15,
+     "url": "https://www.mydisplays.net/wahlplakat-hohlkammer",
+     "notes": [
+      "ohne Lochung (nur 4 Eckbohrungen wählbar)",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 1,
+     "net": 18.12,
+     "gross": 21.56,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 100,
+     "net": 514.28,
+     "gross": 612.0,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 500,
+     "net": 1734.23,
+     "gross": 2063.74,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 1000,
+     "net": 3235.79,
+     "gross": 3850.58,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 5000,
+     "net": 16164.56,
+     "gross": 19235.83,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "p24",
+     "format": "A0",
+     "material": "Hohlkammerplatte 450 g, 2,5 mm",
+     "qty": 10000,
+     "net": 32329.12,
+     "gross": 38471.65,
+     "url": "https://print24.com/de/druckprodukte/plakate/wahlplakate"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1,
+     "net": 18.73,
+     "gross": 22.29,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 100,
+     "net": 491.02,
+     "gross": 584.31,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 500,
+     "net": 1969.46,
+     "gross": 2343.66,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "material": "PP-Hohlkammerplatte 2,5 mm",
+     "qty": 1000,
+     "net": 3622.47,
+     "gross": 4310.74,
+     "url": "https://www.saxoprint.de/plakate/hohlkammerplakate-drucken"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1,
+     "net": 18.63,
+     "gross": 22.17,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 100,
+     "net": 470.86,
+     "gross": 560.32,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 500,
+     "net": 1711.34,
+     "gross": 2036.49,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 1000,
+     "net": 3385.71,
+     "gross": 4028.99,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 5000,
+     "net": 16928.57,
+     "gross": 20145.0,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "A0",
+     "material": "Hohlkammerplatte 3 mm",
+     "qty": 10000,
+     "net": 33857.14,
+     "gross": 40290.0,
+     "url": "https://www.wir-machen-druck.de/wahlplakat-auf-hohlkammerplatte-din-a0-einseitig-40farbig-bedruckt-mit-10-bohrungen.html"
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 100,
+     "net": 457.0,
+     "gross": 543.83,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a0/",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 500,
+     "net": 1685.0,
+     "gross": 2005.15,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a0/",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 1000,
+     "net": 3300.0,
+     "gross": 3927.0,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a0/",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "material": "Hohlkammer-Stegplatte 2,5 mm",
+     "qty": 5000,
+     "net": 16500.0,
+     "gross": 19635.0,
+     "url": "https://www.wahlplakatshop.de/product/hohlkammerplakate-a0/",
+     "notes": [
+      "12-fach statt 10-fach Lochung"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "18/1",
+     "material": "120 g Blueback-Affichenpapier",
+     "qty": 1,
+     "net": 83.15,
+     "gross": 98.95,
+     "url": "https://www.bannerkoenig.de/shop/18-1-grossflaechenplakat/",
+     "notes": [
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "18/1",
+     "material": "120 g Blueback-Affichenpapier",
+     "qty": 3,
+     "net": 219.48,
+     "gross": 261.18,
+     "url": "https://www.bannerkoenig.de/shop/18-1-grossflaechenplakat/",
+     "notes": [
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "18/1",
+     "material": "120 g Blueback-Affichenpapier",
+     "qty": 5,
+     "net": 361.2,
+     "gross": 429.83,
+     "url": "https://www.bannerkoenig.de/shop/18-1-grossflaechenplakat/",
+     "notes": [
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "bk",
+     "format": "18/1",
+     "material": "120 g Blueback-Affichenpapier",
+     "qty": 10,
+     "net": 688.6,
+     "gross": 819.43,
+     "url": "https://www.bannerkoenig.de/shop/18-1-grossflaechenplakat/",
+     "notes": [
+      "Versand: nur Mindestbetrag 6,90 € eingerechnet"
+     ]
+    },
+    {
+     "shop": "fla",
+     "format": "18/1",
+     "material": "115 g Affichenpapier",
+     "qty": 1,
+     "net": 57.6,
+     "gross": 68.54,
+     "url": "https://www.flyeralarm.com/de/p/181-plakate-22634376.html"
+    },
+    {
+     "shop": "fla",
+     "format": "18/1",
+     "material": "115 g Affichenpapier",
+     "qty": 3,
+     "net": 129.79,
+     "gross": 154.45,
+     "url": "https://www.flyeralarm.com/de/p/181-plakate-22634376.html"
+    },
+    {
+     "shop": "fla",
+     "format": "18/1",
+     "material": "115 g Affichenpapier",
+     "qty": 5,
+     "net": 201.76,
+     "gross": 240.09,
+     "url": "https://www.flyeralarm.com/de/p/181-plakate-22634376.html"
+    },
+    {
+     "shop": "fla",
+     "format": "18/1",
+     "material": "115 g Affichenpapier",
+     "qty": 10,
+     "net": 367.47,
+     "gross": 437.29,
+     "url": "https://www.flyeralarm.com/de/p/181-plakate-22634376.html"
+    },
+    {
+     "shop": "h2p",
+     "format": "18/1",
+     "material": "115 g Plakatpapier Blueback",
+     "qty": 1,
+     "net": 77.5,
+     "gross": 92.23,
+     "url": "https://www.highway2print.de/produkt/grossflaechen-plakat-18-1-plakate/",
+     "notes": [
+      "4 Teile, gefalzt und gemappt",
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "18/1",
+     "material": "115 g Plakatpapier Blueback",
+     "qty": 3,
+     "net": 144.8,
+     "gross": 172.31,
+     "url": "https://www.highway2print.de/produkt/grossflaechen-plakat-18-1-plakate/",
+     "notes": [
+      "4 Teile, gefalzt und gemappt",
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "18/1",
+     "material": "115 g Plakatpapier Blueback",
+     "qty": 5,
+     "net": 208.5,
+     "gross": 248.12,
+     "url": "https://www.highway2print.de/produkt/grossflaechen-plakat-18-1-plakate/",
+     "notes": [
+      "4 Teile, gefalzt und gemappt",
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "h2p",
+     "format": "18/1",
+     "material": "115 g Plakatpapier Blueback",
+     "qty": 10,
+     "net": 372.0,
+     "gross": 442.68,
+     "url": "https://www.highway2print.de/produkt/grossflaechen-plakat-18-1-plakate/",
+     "notes": [
+      "4 Teile, gefalzt und gemappt",
+      "Versand nach Gewichtstabelle berechnet"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "18/1",
+     "material": "130 g Affichenpapier Blueback",
+     "qty": 1,
+     "net": 73.24,
+     "gross": 87.16,
+     "url": "https://www.mydisplays.net/affichen-papier",
+     "notes": [
+      "Freiformat 356 × 252 cm, in Bahnen bis 130 cm gedruckt",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "18/1",
+     "material": "130 g Affichenpapier Blueback",
+     "qty": 3,
+     "net": 199.92,
+     "gross": 237.9,
+     "url": "https://www.mydisplays.net/affichen-papier",
+     "notes": [
+      "Freiformat 356 × 252 cm, in Bahnen bis 130 cm gedruckt",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "18/1",
+     "material": "130 g Affichenpapier Blueback",
+     "qty": 5,
+     "net": 326.6,
+     "gross": 388.65,
+     "url": "https://www.mydisplays.net/affichen-papier",
+     "notes": [
+      "Freiformat 356 × 252 cm, in Bahnen bis 130 cm gedruckt",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "md",
+     "format": "18/1",
+     "material": "130 g Affichenpapier Blueback",
+     "qty": 10,
+     "net": 643.3,
+     "gross": 765.53,
+     "url": "https://www.mydisplays.net/affichen-papier",
+     "notes": [
+      "Freiformat 356 × 252 cm, in Bahnen bis 130 cm gedruckt",
+      "Versand geschätzt (9,90 € je 30-kg-Paket)"
+     ]
+    },
+    {
+     "shop": "mx",
+     "format": "18/1",
+     "material": "115 g Blueback-Affichenpapier",
+     "qty": 1,
+     "net": 46.86,
+     "gross": 55.77,
+     "url": "https://maxxprint.de/18-1-plakat-mp10040/",
+     "notes": [
+      "4 Teile, verklebefertig gemappt"
+     ]
+    },
+    {
+     "shop": "mx",
+     "format": "18/1",
+     "material": "115 g Blueback-Affichenpapier",
+     "qty": 3,
+     "net": 95.59,
+     "gross": 113.75,
+     "url": "https://maxxprint.de/18-1-plakat-mp10040/",
+     "notes": [
+      "4 Teile, verklebefertig gemappt"
+     ]
+    },
+    {
+     "shop": "mx",
+     "format": "18/1",
+     "material": "115 g Blueback-Affichenpapier",
+     "qty": 5,
+     "net": 144.31,
+     "gross": 171.73,
+     "url": "https://maxxprint.de/18-1-plakat-mp10040/",
+     "notes": [
+      "4 Teile, verklebefertig gemappt"
+     ]
+    },
+    {
+     "shop": "mx",
+     "format": "18/1",
+     "material": "115 g Blueback-Affichenpapier",
+     "qty": 10,
+     "net": 266.12,
+     "gross": 316.68,
+     "url": "https://maxxprint.de/18-1-plakat-mp10040/",
+     "notes": [
+      "4 Teile, verklebefertig gemappt"
+     ]
+    },
+    {
+     "shop": "wmd",
+     "format": "18/1",
+     "material": "120 g Affichenpapier Blueback",
+     "qty": 1,
+     "net": 26.43,
+     "gross": 31.45,
+     "url": "https://www.wir-machen-druck.de/grossflaechenplakat-181-356-x-252-cm-einseitig-40farbig-bedruckt.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "18/1",
+     "material": "120 g Affichenpapier Blueback",
+     "qty": 3,
+     "net": 75.52,
+     "gross": 89.87,
+     "url": "https://www.wir-machen-druck.de/grossflaechenplakat-181-356-x-252-cm-einseitig-40farbig-bedruckt.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "18/1",
+     "material": "120 g Affichenpapier Blueback",
+     "qty": 5,
+     "net": 125.85,
+     "gross": 149.76,
+     "url": "https://www.wir-machen-druck.de/grossflaechenplakat-181-356-x-252-cm-einseitig-40farbig-bedruckt.html"
+    },
+    {
+     "shop": "wmd",
+     "format": "18/1",
+     "material": "120 g Affichenpapier Blueback",
+     "qty": 10,
+     "net": 251.69,
+     "gross": 299.51,
+     "url": "https://www.wir-machen-druck.de/grossflaechenplakat-181-356-x-252-cm-einseitig-40farbig-bedruckt.html"
+    },
+    {
+     "shop": "wps",
+     "format": "18/1",
+     "material": "115 g Affichenpapier Blueback",
+     "qty": 1,
+     "net": 34.5,
+     "gross": 41.06,
+     "url": "https://www.wahlplakatshop.de/affichenpapier-18-1-plakate/",
+     "notes": [
+      "4 Teile"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "18/1",
+     "material": "115 g Affichenpapier Blueback",
+     "qty": 3,
+     "net": 103.5,
+     "gross": 123.17,
+     "url": "https://www.wahlplakatshop.de/affichenpapier-18-1-plakate/",
+     "notes": [
+      "4 Teile"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "18/1",
+     "material": "115 g Affichenpapier Blueback",
+     "qty": 5,
+     "net": 172.5,
+     "gross": 205.28,
+     "url": "https://www.wahlplakatshop.de/affichenpapier-18-1-plakate/",
+     "notes": [
+      "4 Teile"
+     ]
+    },
+    {
+     "shop": "wps",
+     "format": "18/1",
+     "material": "115 g Affichenpapier Blueback",
+     "qty": 10,
+     "net": 323.5,
+     "gross": 384.97,
+     "url": "https://www.wahlplakatshop.de/affichenpapier-18-1-plakate/",
+     "notes": [
+      "4 Teile"
+     ]
+    }
+   ],
+   "unavailable": [
+    {
+     "shop": "wps",
+     "format": "A1",
+     "qty": 1,
+     "reason": "Mindestbestellmenge 10 Stück"
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "qty": 1,
+     "reason": "Mindestbestellmenge 10 Stück"
+    },
+    {
+     "shop": "h2p",
+     "format": "A0",
+     "qty": 1,
+     "reason": "Mindestbestellmenge 2 Stück"
+    },
+    {
+     "shop": "fla",
+     "format": "A1",
+     "qty": 10000,
+     "reason": "online höchstens 5.000 Stück"
+    },
+    {
+     "shop": "fla",
+     "format": "A0",
+     "qty": 10000,
+     "reason": "online höchstens 5.000 Stück"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "qty": 5000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "sax",
+     "format": "A1",
+     "qty": 10000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "qty": 5000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "sax",
+     "format": "A0",
+     "qty": 10000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "qty": 5000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "dn",
+     "format": "A1",
+     "qty": 10000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "qty": 5000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "dn",
+     "format": "A0",
+     "qty": 10000,
+     "reason": "online höchstens 1.000 Stück"
+    },
+    {
+     "shop": "wps",
+     "format": "A1",
+     "qty": 10000,
+     "reason": "online höchstens 5.000 Stück, größere Mengen auf Anfrage"
+    },
+    {
+     "shop": "wps",
+     "format": "A0",
+     "qty": 10000,
+     "reason": "online höchstens 5.000 Stück, größere Mengen auf Anfrage"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 1,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 100,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 500,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 1000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 5000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A1",
+     "qty": 10000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 1,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 100,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 500,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 1000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 5000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "mx",
+     "format": "A0",
+     "qty": 10000,
+     "reason": "kein Hohlkammer-Wahlplakat mehr im Sortiment (seit Shop-Umstellung Oktober 2026)"
+    },
+    {
+     "shop": "p24",
+     "format": "18/1",
+     "qty": 1,
+     "reason": "18/1 erst ab 100 Stück (Offsetdruck)"
+    },
+    {
+     "shop": "p24",
+     "format": "18/1",
+     "qty": 3,
+     "reason": "18/1 erst ab 100 Stück (Offsetdruck)"
+    },
+    {
+     "shop": "p24",
+     "format": "18/1",
+     "qty": 5,
+     "reason": "18/1 erst ab 100 Stück (Offsetdruck)"
+    },
+    {
+     "shop": "p24",
+     "format": "18/1",
+     "qty": 10,
+     "reason": "18/1 erst ab 100 Stück (Offsetdruck)"
+    },
+    {
+     "shop": "sax",
+     "format": "18/1",
+     "qty": 1,
+     "reason": "kein 18/1-Plakat im Sortiment (höchstens DIN A0)"
+    },
+    {
+     "shop": "sax",
+     "format": "18/1",
+     "qty": 3,
+     "reason": "kein 18/1-Plakat im Sortiment (höchstens DIN A0)"
+    },
+    {
+     "shop": "sax",
+     "format": "18/1",
+     "qty": 5,
+     "reason": "kein 18/1-Plakat im Sortiment (höchstens DIN A0)"
+    },
+    {
+     "shop": "sax",
+     "format": "18/1",
+     "qty": 10,
+     "reason": "kein 18/1-Plakat im Sortiment (höchstens DIN A0)"
+    },
+    {
+     "shop": "dn",
+     "format": "18/1",
+     "qty": 1,
+     "reason": "kein 18/1-Plakat im Sortiment (Affichenpapier höchstens DIN A0)"
+    },
+    {
+     "shop": "dn",
+     "format": "18/1",
+     "qty": 3,
+     "reason": "kein 18/1-Plakat im Sortiment (Affichenpapier höchstens DIN A0)"
+    },
+    {
+     "shop": "dn",
+     "format": "18/1",
+     "qty": 5,
+     "reason": "kein 18/1-Plakat im Sortiment (Affichenpapier höchstens DIN A0)"
+    },
+    {
+     "shop": "dn",
+     "format": "18/1",
+     "qty": 10,
+     "reason": "kein 18/1-Plakat im Sortiment (Affichenpapier höchstens DIN A0)"
+    },
+    {
+     "shop": "jjb",
+     "format": "18/1",
+     "qty": 1,
+     "reason": "kein 18/1-Plakat im Sortiment"
+    },
+    {
+     "shop": "jjb",
+     "format": "18/1",
+     "qty": 3,
+     "reason": "kein 18/1-Plakat im Sortiment"
+    },
+    {
+     "shop": "jjb",
+     "format": "18/1",
+     "qty": 5,
+     "reason": "kein 18/1-Plakat im Sortiment"
+    },
+    {
+     "shop": "jjb",
+     "format": "18/1",
+     "qty": 10,
+     "reason": "kein 18/1-Plakat im Sortiment"
+    }
+   ]
   }
  ]
 }
